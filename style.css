@@ -23,6 +23,30 @@ nav ul li{
     display: inline-block;
     margin-right: 20px;
 }
+
+.navbar nav ul li a {
+    font-size: 18px; 
+    text-decoration: none; 
+    color: black; 
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+.navbar img {
+    transition: transform 0.3s ease;
+}
+
+
+.navbar img:hover {
+    transform: scale(1.2); /* Slightly enlarge the cart icon */
+    cursor: pointer; /* Optional: Add pointer cursor */
+}
+
+
+.navbar nav ul li a:hover {
+    color: blue; /* Change text color on hover */
+    font-size: 20px; /* Slightly enlarge text on hover */
+    text-decoration: underline; /* Optional: underline text */
+    cursor: pointer; /* Show pointer cursor */
+}
 a{
     text-decoration: none;
     color: #555;
@@ -279,6 +303,7 @@ small{
 .footer-col-2 img{
     width: 180px;
     margin-bottom: 20px;
+  
 }
 
 .footer-col-33, .footer-col-44{
@@ -359,4 +384,24 @@ ul{
     .col-44 img{
         width: 200px;
     }
+}
+
+.footer-col-33 ul li,
+.footer-col-44 ul li {
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footer-col-33 ul li:hover,
+.footer-col-44 ul li:hover {
+    color: blue; /* Turn text blue when hovered */
+    cursor: pointer; /* Show pointer cursor */
+}
+
+.app-logo img {
+    transition: transform 0.3s ease; /* Smooth scaling */
+}
+
+.app-logo img:hover {
+    transform: scale(1.1); /* Enlarge slightly */
+    cursor: pointer; /* Pointer cursor on hover */
 }
